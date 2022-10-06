@@ -1,0 +1,33 @@
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  gap: 32px;
+  padding: 8px;
+  height: calc(100vh - 50px);
+
+  span {
+    cursor: pointer;
+  }
+  .logout-icon {
+    margin-top: auto;
+  }
+  .store-icon,
+  .logout-icon,
+  .bagHandle-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    border-radius: 8px;
+  }
+
+  .logout-icon {
+    background-color: var(--danger);
+    color: var(--white);
+  }
+}

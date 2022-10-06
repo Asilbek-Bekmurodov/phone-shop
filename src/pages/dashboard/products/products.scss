@@ -1,0 +1,13 @@
+.products-section {
+  padding: 25px 8px;
+  h1 {
+    font-size: 48px;
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #ededed;
+  }
+}

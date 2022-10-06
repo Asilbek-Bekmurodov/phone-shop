@@ -1,0 +1,26 @@
+.product {
+  display: inline-block;
+  img {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 15px;
+    height: 340px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  p {
+    color: gray;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+    b {
+      font-size: 22px;
+    }
+  }
+}

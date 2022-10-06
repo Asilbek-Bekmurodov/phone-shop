@@ -1,0 +1,27 @@
+._btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px 8px 14px;
+  font-family: "Cabin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #1a1f16;
+  border: none;
+  border-radius: 14px;
+  transition: all 0.2s ease-in-out;
+  gap: 8px;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  svg {
+    path {
+      fill: white;
+    }
+  }
+}

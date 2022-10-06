@@ -1,0 +1,31 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #e5e5e5;
+
+  form {
+    background: var(--white);
+    border-radius: 15px;
+    width: 500px;
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    .login-btn {
+      margin-top: 20px;
+      background: var(--dark);
+      border-radius: 10px;
+      padding: 12px 24px;
+      color: var(--white);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:active {
+        background: var(--tertiary);
+        color: var(--white);
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.bag-items {
+  .bag-item {
+    margin-bottom: 24px;
+  }
+  &__starts {
+    display: flex;
+    gap: 9.5px;
+    color: var(--accent);
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48.83px;
+    line-height: 59px;
+    color: #1a1f16;
+  }
+  &__starts-vs-rate {
+    display: flex;
+    gap: 36px;
+    .bag-items__rate {
+      display: flex;
+      gap: 30px;
+      font-size: 24px;
+      margin-left: -40px;
+     
+    }
+  }
+  &-box {
+    padding: 24px;
+    background: #fff;
+    border-radius: 21px;
+    display: flex;
+    &_img {
+      img {
+        height: 254px;
+      }
+    }
+    &__description {
+      width: 78%;
+      h1 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 31.25px;
+        line-height: 38px;
+        color: #1a1f16;
+      }
+      p {
+        &:first-of-type {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #60695c;
+        }
+        &:last-of-type {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: -0.02em;
+          color: #1a1f16;
+        }
+      }
+    }
+    &__description__price-part {
+      display: flex;
+      margin-top: 38.5px;
+      justify-content: space-between;
+      .bag-items-box__price-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .bag-items-box__price,
+        .bag-items-box__goods {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #1a1f16;
+        }
+      }
+      .bag-items-box__total-goods {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 24px;
+        color: #1a1f16;
+        display: flex;
+        gap: 27.5px;
+        .bag-items-box__dec {
+          cursor: pointer;
+          color: #e5252c;
+        }
+        .bag-items-box__inc {
+          cursor: pointer;
+          color: #02d693;
+        }
+      }
+    }
+  }
+}

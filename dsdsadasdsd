@@ -1,0 +1,42 @@
+[1mdiff --git a/src/pages/checkout/checkout.jsx b/src/pages/checkout/checkout.jsx[m
+[1mindex ba90490..011647c 100644[m
+[1m--- a/src/pages/checkout/checkout.jsx[m
+[1m+++ b/src/pages/checkout/checkout.jsx[m
+[36m@@ -1,5 +1,6 @@[m
+[31m-import React, { Component } from 'react'[m
+[31m-import SideBar from '../../components/side-bar/side-bar';[m
+[32m+[m[32mimport React, { Component } from "react";[m
+[32m+[m[32mimport SideBar from "../../components/side-bar/side-bar";[m
+[32m+[m[32mimport Bag from "../../components/bag/bag";[m
+ [m
+ import "./checkout.scss";[m
+ [m
+[36m@@ -11,10 +12,11 @@[m [mexport default class checkout extends Component {[m
+           <SideBar />[m
+         </div>[m
+         <div className="main-wrapper">Bu yerda products keladi</div>[m
+[31m-        <div className="right-sidebar">Bu yerda bag companenta keladi</div>[m
+[32m+[m[32m        <div className="right-sidebar">[m
+[32m+[m[32m          <Bag />[m
+[32m+[m[32m        </div>[m
+       </div>[m
+       // Componentlar shu divlar ichida yoziladi !!![m
+[31m-    )[m
+[32m+[m[32m    );[m
+   }[m
+ }[m
+[31m-[m
+[1mdiff --git a/src/pages/view/view.scss b/src/pages/view/view.scss[m
+[1mindex 2e218b9..22c1fba 100644[m
+[1m--- a/src/pages/view/view.scss[m
+[1m+++ b/src/pages/view/view.scss[m
+[36m@@ -4,9 +4,6 @@[m
+   justify-content: space-between;[m
+   background-color: #e5e5e5;[m
+ [m
+[31m-  .left-sidebar {[m
+[31m-  }[m
+[31m-[m
+   .main-wrapper {[m
+     .backBtn {[m
+       font-size: 25px;[m
